@@ -5,13 +5,14 @@ import loading from "../../utils/loading.js";
 
 export function focusMarker(map, marker, zoom) {
   if (!map) map = getMap();
-
-  const latLng = marker.getLatLng();
+  map.setView(marker.getLatLng())
+  
+  /*const latLng = marker.getLatLng();
   const targetZoom = zoom || map.getZoom();
   map.flyTo(latLng, targetZoom, {
     animate: true,
     duration: 0.5, // tempo da animação (em segundos)
-  });
+  });*/
 }
 
 export function focusMarkerSearchNome(nome) {
