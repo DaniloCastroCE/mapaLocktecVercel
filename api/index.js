@@ -16,6 +16,4 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(router);
 
-// ❌ Não usar app.listen() na Vercel
-// ✅ Apenas exportar o app
 export default app;
