@@ -14,7 +14,7 @@ export function clickMarker({local,marker}) {
   sidebar_clickMarker({local,marker})
   if(marker.isPopupOpen()){
     if(!getView()) controllerViewMarker(marker,'hide')
-    focusMarker(getMap(), marker)
+    //focusMarker(getMap(), marker)
   }
 }
 
