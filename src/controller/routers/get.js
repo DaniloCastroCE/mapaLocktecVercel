@@ -1,9 +1,9 @@
-const path = require('path')
+import path from "path";
+import { fileURLToPath } from "url";
 
-const home = (req, res) => {
-    res.sendFile(path.join(__dirname, '../../../public', 'pages/index.html'))
-}
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-module.exports = {
-    home
+export function home(req, res) {
+  res.sendFile(path.join(__dirname, "../../../public/pages/index.html"));
 }
