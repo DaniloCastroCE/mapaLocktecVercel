@@ -1,0 +1,52 @@
+
+/* Contêiner principal do controle de zoom */
+.leaflet-control-zoom {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Botões de zoom + e - */
+.leaflet-control-zoom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  background-color: transparent;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* Efeito hover: leve destaque e aumento */
+.leaflet-control-zoom a:hover {
+  background-color: #0078ff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Efeito de clique (pressionado) */
+.leaflet-control-zoom a:active {
+  transform: scale(0.95);
+  background-color: #005fcc;
+}
+
+/* Linha divisória suave entre os botões */
+.leaflet-control-zoom-in {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Opcional: ajuste de margens para afastar do canto */
+.leaflet-top.leaflet-left .leaflet-control-zoom {
+  margin-top: 10px;
+  margin-left: 10px;
+}

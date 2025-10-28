@@ -1,0 +1,25 @@
+/* Globals */
+@import url('./globals/variables.css');
+@import url('./globals/reset.css');
+@import url('./globals/globals.css');
+
+/* Layout */
+@import url('./layout/header.css');
+@import url('./layout/main.css');
+@import url('./layout/footer.css');
+
+/* Utils */
+@import url('./utils/animations.css');
+@import url('./utils/loading.css');
+@import url('./utils/toast.css');
+
+/* Components */
+
+@import url('./components/leaflet-marker.css');
+@import url('./components/leaflet-search.css');
+@import url('./components/leaflet-zoom.css');
+@import url('./components/leaflet-box-zoom.css');
+@import url('./components/leaflet-btn-layer-sidebar.css');
+@import url('./components/map.css');
+@import url('./components/mapa-sidebar.css');
+

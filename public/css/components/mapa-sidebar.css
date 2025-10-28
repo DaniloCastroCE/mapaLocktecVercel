@@ -1,0 +1,221 @@
+/* ====== SIDEBAR PRINCIPAL ====== */
+.mapa-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 450px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  background: #fdfdfd;
+  color: #333;
+  box-shadow: -10px 0 25px rgba(0, 0, 0, 0.15);
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 1000;
+  border-left: 2px solid #0078ff20;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0078ff40 transparent;
+}
+
+/* Mostrar o sidebar */
+.mapa-sidebar.show {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ====== BOTÃO DE FECHAR ====== */
+.mapa-sidebar-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mapa-sidebar-close:hover {
+  transform: scale(1.1);
+}
+
+.mapa-sidebar-close svg {
+  width: 22px;
+  height: auto;
+  fill: #ff3b30;
+}
+
+/* ====== CONTEÚDO ====== */
+.mapa-sidebar-content {
+  margin-top: 45px;
+  padding: 0 15px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.mapa-sidebar-content .conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* ====== TÍTULO ====== */
+.mapa-sidebar-content .conteudo h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* ====== BLOCO DE ENDEREÇO ====== */
+.mapa-sidebar-content .conteudo .sidebar-endereco {
+  background: #f3f7ff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  width: 100%;
+  box-shadow: inset 0 0 5px rgba(0, 120, 255, 0.1);
+}
+
+.mapa-sidebar-content .conteudo p {
+  font-size: 18px;
+  color: #444;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* ====== LINKS ====== */
+.mapa-sidebar-content .conteudo a {
+  color: #0078ff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.mapa-sidebar-content .conteudo a:hover {
+  color: #005fcc;
+  text-decoration: underline;
+}
+
+/* ====== ÍCONES ====== */
+.mapa-sidebar-content .conteudo .container-sidebar-svg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.mapa-sidebar-content .conteudo .sidebar-svg {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.25s ease;
+}
+
+.mapa-sidebar-content .conteudo .sidebar-svg:hover {
+  transform: translateY(-2px);
+  background: #e9f3ff;
+}
+
+.mapa-sidebar-content .conteudo .sidebar-svg:active {
+  transform: scale(0.95);
+  background: #cde4ff;
+}
+
+.mapa-sidebar-content .conteudo svg {
+  width: 36px;
+  height: auto;
+}
+
+.sidebar-menu-fixo {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #fdfdfd;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.close-fixo {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: transform 0.2s ease; 
+}
+
+.close-fixo svg {
+  width: 22px !important;
+  height: auto;
+  fill: #ff3b30;
+}
+
+.box-mutiple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  word-break: break-word;
+  gap: 18px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 5px;
+  width: 100%;
+}
+
+.box-mutiple .sidebar-endereco {
+  position: relative;
+  width: 100%;
+  padding: 0 0 20px 0;
+  cursor: pointer;
+}
+
+.box-mutiple .sidebar-endereco:active {
+  transform: scale(0.98);
+}
+
+
+.box-mutiple .sidebar-endereco p {
+  line-height: 1;
+}
+
+.box-mutiple .sidebar-endereco .order {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 14px;
+  color: #0078ff;
+  font-weight: bold;
+}
+
+.box-mutiple .sidebar-endereco .deleteElEndCond {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-weight: bold;
+}
+.box-mutiple .sidebar-endereco .deleteElEndCond svg {
+  width: 20px;
+  height: auto;
+  fill: #ff3b30;
+}
+
+.box-mutiple .sidebar-endereco .procurarLocal {
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  font-weight: bold;
+}
+.box-mutiple .sidebar-endereco .procurarLocal svg {
+  width: 20px;
+  height: auto;
+}

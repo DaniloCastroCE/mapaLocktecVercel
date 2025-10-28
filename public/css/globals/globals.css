@@ -1,0 +1,12 @@
+.box-sombra {
+  box-shadow: 
+    5px 5px 5px rgba(0, 0, 0, 0.2), 
+    10px 10px 10px rgba(0, 0, 0, 0.15), 
+    15px 15px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.text-break-line {
+  overflow-wrap: break-word;
+  hyphens: auto;
+  word-break: break-word;
+}

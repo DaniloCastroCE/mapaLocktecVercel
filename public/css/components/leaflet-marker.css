@@ -1,0 +1,46 @@
+.leaflet-control,
+.leaflet-popup
+{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(0, 0, 0, 0.15), 15px 15px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.tooltip-marker {
+    padding: 0 1px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Verdana", "Arial";
+    color: blue;
+}
+
+.tooltip-marker,.icon-marker {
+    animation: fadeInSimple 1s ease-in-out;
+}
+
+.popup-marker h3,.popup-marker p{
+    text-align: center;
+}
+
+.tooltip-marker h3 {
+    font-size: 12px;
+    color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+.popup-marker p{
+    margin: 5px 0;
+}
+
+.leaflet-tooltip.tooltip-focused {
+  z-index: 9999 !important;
+  pointer-events: none;
+}
+
+.hidden-marker {
+    display: none !important;
+}
+
+.tooltip-display-none {
+    display: none !important;
+}

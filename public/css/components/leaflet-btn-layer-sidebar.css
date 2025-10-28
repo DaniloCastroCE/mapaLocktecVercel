@@ -1,0 +1,56 @@
+/* Contêiner principal do botão da sidebar */
+.box-btn-layer-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+/* Pequena elevação e brilho ao passar o mouse */
+.box-btn-layer-sidebar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de clique */
+.box-btn-layer-sidebar:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Contêiner do SVG */
+.box-btn-layer-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+/* SVG (ícone) */
+.box-btn-layer-sidebar svg {
+  width: 44px;
+  height: 44px;
+  fill: #222;
+  transition: fill 0.25s ease, transform 0.25s ease;
+}
+
+/* Ao passar o mouse, muda a cor do ícone */
+.box-btn-layer-sidebar:hover .div-btn-list-sidebar svg {
+  fill: #0078ff;
+  transform: scale(1.1);
+}
+
+/* Ajuste de posição padrão no canto superior esquerdo */
+.leaflet-top.leaflet-left .box-btn-layer-sidebar {
+  margin-top: 10px;
+  margin-left: 10px;
+}
