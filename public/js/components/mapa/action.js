@@ -10,7 +10,7 @@ export function focusMarker(map, marker, zoom) {
   const targetZoom = zoom || map.getZoom();
   map.flyTo(latLng, targetZoom, {
     animate: true,
-    duration: 1.5, // tempo da animação (em segundos)
+    duration: 0.5, // tempo da animação (em segundos)
   });
 }
 
