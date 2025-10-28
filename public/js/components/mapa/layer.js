@@ -385,6 +385,7 @@ export function addSearchControl(map, markers) {
 
 // Cria e adiciona um controle personalizado que exibe o nível de zoom atual do mapa
 export function addBoxZoom(map) {
+    let myzoom = Math.round(map.getZoom()) || '14'
     // ====== 1. Define o novo controle personalizado ======
     const BoxZoom = L.Control.extend({
         onAdd: function () {
@@ -412,7 +413,7 @@ export function addBoxZoom(map) {
     // ====== 3. Atualiza o número do zoom sempre que o mapa for alterado ======
     map.on("zoomend", () => {
         const zoomNumber = document.querySelector("#zoomNumber");
-        if (zoomNumber) zoomNumber.textContent = map.getZoom();
+        if (zoomNumber) zoomNumber.textContent = Math.round(map.getZoom());
     });
 
     // ====== 4. Reposiciona o controle (coloca antes do botão de zoom padrão) ======
