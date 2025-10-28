@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
-import router from "./src/router/router.js";
+import router from "../src/router/router.js";
 
 dotenv.config();
 
