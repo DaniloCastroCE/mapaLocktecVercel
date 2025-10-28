@@ -212,7 +212,7 @@
 .box-mutiple .sidebar-endereco .procurarLocal {
   position: absolute;
   bottom: 2px;
-  right: 5px;
+  left: 2px;
   font-weight: bold;
 }
 .box-mutiple .sidebar-endereco .procurarLocal svg {
