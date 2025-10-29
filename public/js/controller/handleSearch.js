@@ -1,6 +1,6 @@
 import { removeAccents } from "../utils/stringUtils.js";
 import { clickMarker } from "../components/mapa/mapEvents.js"; 
-import { viewMarkerMultiple, setEsconderMarkers } from "../components/mapa/action.js";
+import { viewMarkerMultiple, setEsconderMarkers, focusMarker } from "../components/mapa/action.js";
 import {getListCondominios, setListCondominios, actionSidebar, addCodeHTMLSidebarMarkerMultiple} from "../components/sidebar.js"
 import {getStatus, setStatus} from "../main.js"
 
@@ -58,6 +58,7 @@ export function handleSearch(manualValue = null,inputType,inputText,markers) {
     if(tipo === 'nome') {
         resultados[0].marker.openPopup()
         clickMarker(resultados[0])
+        focusMarker(null,resultados[0].marker)
         viewMarkerMultiple(resultados[0].marker,'one')
     }else {
         setListCondominios(resultados)
