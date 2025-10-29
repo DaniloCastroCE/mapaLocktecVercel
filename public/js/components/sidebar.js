@@ -191,7 +191,7 @@ function addLocalFromList(listCondominios) {
 export function addCodeHTMLSidebarMarkerMultiple(local, marker) {
   const content = mapa_sidebar.querySelector(".mapa-sidebar-content");
   if (local) {
-    console.log({ local, marker });
+    //console.log({ local, marker });
     const exists = listCondominios.some(
       (item) => item.marker._leaflet_id === marker._leaflet_id,
     );
