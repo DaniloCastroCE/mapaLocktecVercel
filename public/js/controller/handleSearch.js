@@ -48,7 +48,7 @@ export function handleSearch(manualValue = null,inputType,inputText,markers) {
         }
     }
 
-    console.log("Itens filtrados:", resultados);
+    //console.log("Itens filtrados:", resultados);
 
     if (resultados.length === 0) {
         alert(`Nenhum resultado encontrado na busca de: ${inputText.value.toUpperCase()}`);
