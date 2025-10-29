@@ -7,7 +7,7 @@ Endereço: ${local.end.rua}, ${local.end.num}, ${local.end.bairro}
 `;
 
   navigator.clipboard.writeText(text).then(() => {
-    console.log(`${text}\n\nTexto copiado com sucesso!`);
+    //console.log(`${text}\n\nTexto copiado com sucesso!`);
     toast(`
         <strong>&#10004; Texto copiado com sucesso &#10004;</strong>
         <p>${breaklineFromHTML(text)}</p>
@@ -26,7 +26,7 @@ Endereço: ${obj.local.end.rua}, ${obj.local.end.num}, ${obj.local.end.bairro}
     textCondominios += `<p>${index + 1} - ${obj.local.nome.toUpperCase().trim()}\n</p>`
   });
   navigator.clipboard.writeText(text).then(() => {
-    console.log(`${text}\n\nTexto copiado com sucesso!`);
+    //console.log(`${text}\n\nTexto copiado com sucesso!`);
     toast(`
       <strong>&#10004; Texto copiado com sucesso &#10004;</strong>
       <p style="text-align: center;">${(listCondominios.length).toString().padStart(2, '0')} Condomínios copiados<br><br></p>
