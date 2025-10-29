@@ -147,7 +147,7 @@ export function addSearchControl(map, markers) {
                 selectedIndex = -1; // reset da seleção
 
                 if ((query || searchType.value === "num") && query.length > 0) {
-                    console.log("pesquisando...");
+                    //console.log("pesquisando...");
                 } else if (!query || query.length < 3) {
                     suggestionsContainer.style.display = "none";
                     return;
