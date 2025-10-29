@@ -6,7 +6,7 @@ import {controllerViewMarker} from './action.js'
 
 
 export function zoomend(map) {
-  console.log(map.getZoom())
+  //console.log(map.getZoom())
 }
 
 export function clickMarker({local,marker}) {
